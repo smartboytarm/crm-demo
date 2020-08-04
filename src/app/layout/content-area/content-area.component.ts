@@ -12,4 +12,6 @@ export class ContentAreaComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+  
 }
