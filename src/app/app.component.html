@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <clr-main-container class="main-container">
     <app-component-a></app-component-a>
 
@@ -11,60 +10,3 @@
         </div>
     </div>
 </clr-main-container>
-=======
-<div class="main-container">
-  <app-component-a></app-component-a>
-
-  <div class="content-container">
-    <nav class="sidenav" style="overflow-y: auto;">
-      <app-sidenav></app-sidenav>
-      
-    </nav>
-    <div class="content-area" style="padding: 1em;">
-      <app-content-area ></app-content-area>
-      
-    </div>
-
-
-
-
-  </div>
-</div>
-
-
-<section class="sidenav-content">
-  <clr-tree>
-      <clr-tree-node *ngFor="let admin0 of admins" [(clrExpanded)]="admin0.expanded">
-          <button
-                      class="clr-treenode-link"
-                      [class.active]="admin0.active">
-                  <clr-icon [attr.shape]="admin0.icon"></clr-icon>
-                  {{admin0.name}}
-          </button>
-          <clr-tree-node *ngFor="let admin1 of admin0.admins" [(clrExpanded)]="admin1.expanded">
-              <button
-                      class="clr-treenode-link"
-                      [class.active]="admin1.active">
-                  <clr-icon [attr.shape]="admin1.icon"></clr-icon>
-                  {{admin1.name}}
-              </button>
-              <clr-tree-node *ngFor="let admin2 of admin1.admins" [(clrExpanded)]="admin2.expanded">
-                  <button
-                          class="clr-treenode-link"
-                          [class.active]="admin2.active">
-                      <clr-icon [attr.shape]="admin2.icon"></clr-icon>
-                      {{admin2.name}}
-                  </button>
-                  <clr-tree-node *ngFor="let admin3 of admin2.admins">
-                      <button
-                              class="clr-treenode-link"
-                              [class.active]="admin3.active">
-                          {{admin3.name}}
-                      </button>
-                  </clr-tree-node>
-              </clr-tree-node>
-          </clr-tree-node>
-      </clr-tree-node>
-  </clr-tree>     
-</section>
->>>>>>> 901581493f8dd814da39abe5b56a448aa6e2ba1c
